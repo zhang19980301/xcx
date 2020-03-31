@@ -1,0 +1,21 @@
+<view class="map_container"> 
+  <map class="map" id="map" longitude="{{longitude}}" latitude="{{latitude}}" scale="14" show-location="true" markers="{{markers}}" bindmarkertap="makertap"></map> 
+</view> 
+<view class="rgc_info"> 
+  <text>{{rgcData.address}}</text> 
+  <text>{{rgcData.desc}}</text> 
+  <text>{{rgcData.business}}</text> 
+</view>
+<!-- <view>您现在的位置是：{{msg}}</view> -->
+<view>
+  您现在的大致位置是：{{msg.xian}}
+</view>
+<view>
+  您现在的精确位置是：{{msg.zhunque}}
+</view>
+<view>
+    纬度：{{msg.lat}}
+</view>
+<view>
+  经度：{{msg.lng}}
+</view>
